@@ -1,0 +1,12 @@
+# Imported as pyart. The PyPI distribution name is arm-pyart.
+arm-pyart
+torch
+matplotlib
+numpy
+scipy
+# s3fs lets Py-ART open s3:// paths. This demo downloads with unsigned boto3
+# instead, so an existing AWS login cannot block the public archive.
+s3fs
+boto3
+netCDF4
+pyproj
