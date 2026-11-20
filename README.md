@@ -56,6 +56,12 @@ Alignment helps the raw two-scan variant but does not beat the no-scan
 baseline overall. See [the matched experiment](outputs/temporal_recency/README.md)
 and [its scores](outputs/motion_alignment/summary.csv).
 
+A separate [historical storm analog pilot](outputs/analog_retrieval/README.md)
+retrieves similar visible storms from other days. Matching on the current
+scan and one recent scan did not improve over matching on the current scan
+alone, and both were less accurate than the no-past U-Net on these three
+held-out volumes.
+
 Matched 20-epoch runs with the same seed and 73-channel architecture, changing only whether the GOES channels contain imagery or zeros:
 
 | Tilt | GOES Band 13 on | GOES Band 13 off | Neighbor average |
